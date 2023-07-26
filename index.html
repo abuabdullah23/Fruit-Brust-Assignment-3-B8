@@ -13,11 +13,85 @@
     <!-- CSS Linking -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-main': '#F85559',
+                        'fruit-gray': 'rgba(18, 18, 18, 0.60)',
+                        'fruit-light-gray': 'rgba(18, 18, 18, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!-- Header Section -->
-    <h3>Header</h3>
+    <header>
+        <!-- Navbar start -->
+        <div class="w-full shadow-sm fixed z-10 bg-base-100 pt-2 md:pt-8">
+            <div class="navbar container mx-auto md:bg-fruit-main px-4 py-3 rounded-full">
+                <div class="navbar-start hidden md:block">
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-lg text-white font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center pl-3">
+                    <img class="w-8 md:w-16" src="./images/logo.png" alt="logo">
+                    <a class="btn btn-ghost text-black md:text-white normal-case text-4xl">Fruit Brust</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="hidden md:block">
+                        <div class="relative flex items-center mr-2">
+                            <input class="w-full py-3 px-5 rounded-full focus:outline-rose-500" required type="text"
+                                name="" id="" placeholder="Search here">
+                            <img class="absolute w-6 h-6 right-6" src="./images/svg-icons/search.svg" alt="search">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost md:hidden swap swap-rotate">
+                            <input type="checkbox" />
+                            <!-- hamburger icon -->
+                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                            </svg>
+                            <!-- close icon -->
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
+                        </label>
+
+                        <ul tabindex="1"
+                            class="menu menu-sm dropdown-content mt-3 -ms-36 z-[1] p-2 shadow bg-base-100 rounded-box w-56 text-lg">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+    </header>
+
 </body>
 
 </html>
