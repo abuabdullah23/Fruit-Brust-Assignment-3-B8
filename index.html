@@ -282,16 +282,7 @@
                 <div class="flex justify-center lg:justify-end">
                     <div class="grid grid-cols-7">
                         <div class="text-center">
-                            <h3 class="text-3xl md:text-5xl font-extrabold">29</h3>
-                            <p class="mt-2 text-fruit-gray">Days</p>
-                        </div>
-
-                        <div class="flex justify-center">
-                            <img class="h-8 pt-2" src="./images/svg-icons/3dot-horizontal.svg" alt="3 dot">
-                        </div>
-
-                        <div class="text-center">
-                            <h3 class="text-3xl md:text-5xl font-extrabold">15</h3>
+                            <h3 id="hours" class="text-3xl md:text-5xl font-extrabold">00</h3>
                             <p class="mt-2 text-fruit-gray">Hours</p>
                         </div>
 
@@ -299,8 +290,8 @@
                             <img class="h-8 pt-2" src="./images/svg-icons/3dot-horizontal.svg" alt="3 dot">
                         </div>
 
-                        <div class="text-center">
-                            <h3 class="text-3xl md:text-5xl font-extrabold">25</h3>
+                        <div  class="text-center">
+                            <h3 id="minutes" class="text-3xl md:text-5xl font-extrabold">00</h3>
                             <p class="mt-2 text-fruit-gray">Minutes</p>
                         </div>
 
@@ -309,9 +300,15 @@
                         </div>
 
                         <div class="text-center">
-                            <h3 class="text-3xl md:text-5xl font-extrabold">08</h3>
+                            <h3 id="seconds" class="text-3xl md:text-5xl font-extrabold">00</h3>
                             <p class="mt-2 text-fruit-gray">Seconds</p>
                         </div>
+
+                        <div class="text-center ml-3">
+                            <h3 id="am-pm" class="text-3xl md:text-5xl font-extrabold">AM/PM</h3>
+                           
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -685,6 +682,10 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Js Linking -->
+    <script src="./js/time.js"></script>
 
 </body>
 
